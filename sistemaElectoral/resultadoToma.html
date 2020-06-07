@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fontawesome-5-13-0/css/all.css">
+	<title>Sistema Experto Elecciones</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Elecciones
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navOrders" aria-controls="navOrders" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navOrders">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container pt-3">
+		<div class="card mb-5">
+			<div class="card-header">
+				Resultado Toma
+			</div>
+			<div id="respuesta"></div>
+			<div class="card-body">
+				<p class="text-justify">Según las repsuestas obtenidas, este es el resultado de su intención de voto</p>
+				<div class="row">
+					<div class="col-12" id="resultadoToma">
+						<div>Lorem ipsum dolor sit amet, consectetur.</div>
+						<div>Reiciendis voluptas quaerat unde, explicabo doloremque.</div>
+						<div>Cum obcaecati perferendis iure debitis, ullam.</div>
+						<div>Sit in mollitia quam, est nesciunt.</div>
+					</div>
+				</div>
+				<button class="btn btn-success" onclick='location.href="index.html";'>Nueva toma</button>
+			</div>
+		</div>
+		<div id="preguntas">
+			
+		</div>
+		<div id="respuesta"></div>
+		<button class="btn btn-success" id="btnGuardar" style="display: none;" onclick="enviarRespuestas()">Guardar</button>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/resultadoToma.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>

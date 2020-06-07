@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fontawesome-5-13-0/css/all.css">
+	<title>Sistema Experto Elecciones</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Elecciones
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navOrders" aria-controls="navOrders" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navOrders">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container pt-3">
+		<h1>Bienvenido...</h1>
+		<p class="text-justify">Te damos la bienvenida a nuestro sistema experto electoral; aquí vas a encontrar una serie de preguntas enfocadas a cada uno de los ambitos mas importantes a tener en cuenta a la hora de elegir un candidato.</p>
+		<div class="card mb-5">
+			<div class="card-header">
+				Información del ciudadano
+			</div>
+			<div id="respuesta"></div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="form-group">
+							<label for="customer">Genero</label><br>
+							<select name="txtGenero" id="txtGenero" class="form-control"></select>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="form-group">
+							<label for="customer">Edad</label><br>
+							<select name="txtEdad" id="txtEdad" class="form-control"></select>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="form-group">
+							<label for="customer">Estrato Social</label><br>
+							<input type="text" name="txtEstrato" id="txtEstrato" class="form-control">
+						</div>
+					</div>
+				</div>
+				<button class="btn btn-success" onclick="guardarCiudadano()">Iniciar</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
